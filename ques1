@@ -1,0 +1,44 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        int x,y,sum,diff,mul,div;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the first number=");
+        x=sc.nextInt();
+        System.out.print("enter the second number=");
+        y=sc.nextInt();
+        sum=sum(x,y);
+        diff=diff(x,y);
+        mul=mul(x,y);
+        div=div(x,y);
+        System.out.println("the sum of two number is:"+sum);
+        System.out.println("the sum of two number is:"+diff);
+        System.out.println("the sum of two number is:"+mul);
+        System.out.println("the sum of two number is:"+div);
+    }
+
+    public static int diff(int a,int b)
+    {
+        int diff=a-b;
+        return diff;
+    }
+    public static int mul(int a, int b)
+    {
+        int mul=a*b;
+        return mul;
+    }
+    public static int div(int a,int b)
+    {
+        int div=a/b;
+        return div;
+    }
+    
+
+}
